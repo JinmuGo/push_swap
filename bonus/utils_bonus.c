@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 16:02:07 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/15 21:07:22 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/15 21:53:56 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 int	atoi_for_ps(const char *str)
 {
 	long long	result;
+	long long	prev;
 	int			sign;
 	int			i;
 
 	result = 0;
 	sign = 1;
 	i = 0;
+	prev = result;
 	if (!str[i] || ft_isspace(str[i]))
 		print_error();
 	if (str[i] == '-')
@@ -29,11 +31,12 @@ int	atoi_for_ps(const char *str)
 		i++;
 	while (str[i])
 	{
-		if (!ft_isdigit(str[i]) || !ft_isinteger(result))
+		if (!ft_isdigit(str[i]) || !ft_isinteger(result) || result < prev)
 			print_error();
 		result = result * 10 + str[i++] - '0';
+		prev = result;
 	}
-	if (!ft_isinteger(result))
+	if (!ft_isinteger(result * sign))
 		print_error();
 	return (result * sign);
 }
