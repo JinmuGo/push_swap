@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 11:44:43 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:48:12 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:06:50 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

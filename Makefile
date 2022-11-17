@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/02 20:10:46 by jgo               #+#    #+#              #
-#    Updated: 2022/11/15 17:19:28 by jgo              ###   ########.fr        #
+#    Updated: 2022/11/17 11:00:50 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ include ./config/color_rules.mk
 
 ##################################################################
 # sub_src compile
-
 LIBFT = libft/libft.a
 $(LIBFT):
 	$(Q)$(MAKE) -C $(@D)
@@ -47,6 +46,14 @@ COMMANDS_SRCS = commands.c \
 				cmd_compare.c
 
 include ./config/compile_rules.mk
+
+$(PUSHSWAP): $(PUSHSWAP_OBJS) $(DEQUEUE_OBJS) $(UTILS_OBJS) $(COMMANDS_OBJS)
+	$(Q)$(CC) $(CFLAGS) $(CPPFLAGS) $^ $(LDFLAGS) $(LDLIBS) -o $@
+$(PUSHSWAP_OBJS): $(LIBFT)
+
+$(CHECKER):$(CHECKER_OBJS)
+	$(Q)$(CC) $(CFLAGS) $(CPPFLAGS) $^ $(LDFLAGS) $(LDLIBS) -o $@
+$(CHECKER_OBJS): $(LIBFT) 
 
 all: $(PUSHSWAP_OBJS)
 	$(MAKE) $(PUSHSWAP)

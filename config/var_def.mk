@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/05 14:02:20 by jgo               #+#    #+#              #
-#    Updated: 2022/11/15 15:55:59 by jgo              ###   ########.fr        #
+#    Updated: 2022/11/17 11:02:01 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,11 +40,9 @@ PRINTF_LIB_DIR = libft_printf
 PUSHSWAP_LIB_DIR = libft_pushswap
 
 # verbose
-
 Q := $(if $(filter 1,$(V) $(VERBOSE)),,@)
 
 # debug
-
 ifdef DEBUG
         CFLAGS += -fsanitize=address -g3
 endif

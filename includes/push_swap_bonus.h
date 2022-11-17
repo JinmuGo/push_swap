@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:48:20 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/15 20:54:40 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:01:33 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ t_st_node	*deque(t_st *st, enum e_rear rear);
 // enque_bonus.c
 void		enque(t_st *st, enum e_rear rear, t_st_node *new);
 
+// utils_bonus.c
 t_bool		is_sorted(t_st *st);
 int			atoi_for_ps(const char *str);
 void		print_error(void);

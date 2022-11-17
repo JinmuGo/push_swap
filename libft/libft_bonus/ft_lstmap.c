@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 11:53:34 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:49:33 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:05:11 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static t_list	*del_lst(void *new_item, t_list *new_list, void (*del)(void*));
 

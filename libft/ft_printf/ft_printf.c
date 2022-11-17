@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 05:44:53 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 18:16:12 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:03:49 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 static	int	func_confirm(va_list *ap, const char conversion)
 {

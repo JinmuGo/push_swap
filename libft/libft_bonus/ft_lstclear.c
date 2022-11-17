@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 11:57:14 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:49:23 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:05:00 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

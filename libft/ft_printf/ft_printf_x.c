@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 00:01:27 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/06 14:42:19 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:03:38 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_printf_x(va_list *ap, const char conversion)
 {

@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 16:23:37 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:48:39 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:07:21 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static size_t	define_diff(size_t s_len, unsigned int start, size_t len);
 

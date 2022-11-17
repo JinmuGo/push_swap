@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 11:58:19 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:48:08 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:06:43 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

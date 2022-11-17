@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 15:47:50 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:47:19 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:06:00 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static size_t	cal_num_len(int n);
 

@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 19:49:25 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 14:47:43 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:06:17 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {

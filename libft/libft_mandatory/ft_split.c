@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 17:06:51 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/07 21:31:07 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:06:40 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static size_t	total_word_count(char const *s, char c);
 static size_t	cal_word_len(char const *s, char c, size_t i);

@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 03:06:38 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 17:00:21 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:04:29 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/get_next_line_bonus.h"
+#include "get_next_line_bonus.h"
 
 t_buf	*add_new_buf(t_buf *buf, int fd)
 {

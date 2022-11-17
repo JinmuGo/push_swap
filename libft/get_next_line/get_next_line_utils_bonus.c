@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 15:06:51 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/05 17:00:31 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:04:32 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/get_next_line_bonus.h"
+#include "get_next_line_bonus.h"
 
 void	*free_lst_elem(t_buf **buf_lst, t_buf *buf)
 {	

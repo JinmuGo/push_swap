@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:01:14 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/15 21:02:20 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:01:17 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-# include "../libft/includes/libft.h"
-# include "../libft/includes/get_next_line_bonus.h"
-# include "../libft/includes/ft_printf.h"
+# include "libft.h"
+# include "get_next_line_bonus.h"
+# include "ft_printf.h"
 
 # define U_INT_MAX 4294967295
 

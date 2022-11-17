@@ -6,11 +6,11 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 21:29:45 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/12 20:30:32 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:07:42 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	**ft_free_all_arr(char **arr)
 {
