@@ -5,26 +5,29 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/11/02 20:10:46 by jgo               #+#    #+#              #
-#    Updated: 2023/05/14 10:45:35 by jgo              ###   ########.fr        #
+#    Created: 2022/11/23 13:42:33 by jgo               #+#    #+#              #
+#    Updated: 2023/05/14 09:50:28 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-include ./make_config/Rules.mk
-include ./make_config/color_rules.mk
+ifndef TOPDIR
+		TOPDIR = $(abspath ../)
+endif
 
-all bonus clean fclean re:
-	$(MAKE) TOPDIR=`pwd` -C lib $@
-	$(MAKE) TOPDIR=`pwd` -C src $@
+include $(TOPDIR)/make_config/Rules.mk
+include $(TOPDIR)/make_config/color_rules.mk
 
-$(NAME):
-	$(MAKE) TOPDIR=`pwd` -C lib
-	$(MAKE) TOPDIR=`pwd` -C src $@
+bonus :
+	$(MAKE) TOPDIR=$(TOPDIR) -C $(BONUS_DIR) $@
 
-norm:
-	@norminette ./src/
+all : 
+	$(MAKE) TOPDIR=$(TOPDIR) -C $(MANDATORY_DIR) $@
 
-leaks: all
-	leaks ./$(NAME)
+clean fclean :
+	$(MAKE) TOPDIR=$(TOPDIR) -C $(MANDATORY_DIR) $@
+# $(MAKE) TOPDIR=$(TOPDIR) -C $(BONUS_DIR) $@
 
-.PHONY: all clean fclean re bonus norm leaks
+re : fclean
+	$(MAKE) TOPDIR=$(TOPDIR) -C $(MANDATORY_DIR)
+
+.PHONY: all clean fclean re bonus
