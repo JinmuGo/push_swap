@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 14:05:59 by jgo               #+#    #+#              #
-#    Updated: 2023/05/14 10:17:38 by jgo              ###   ########.fr        #
+#    Updated: 2023/06/06 14:15:14 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ ifndef TOPDIR
 		TOPDIR = $(abspath ../../)
 endif
 
-include $(TOPDIR)/make_config/Rules.mk
-include $(TOPDIR)/make_config/color_rules.mk
+include $(TOPDIR)/make_config/src/Rules.mk
+include $(TOPDIR)/make_config/com/ColorRules.mk
 
 NAME = $(PROJECT_NAME)
 
@@ -41,7 +41,7 @@ $(NAME): $(OBJS) $(LIBS)
 	$(MAKE) files="$(HEADS)" src_dir=`pwd`/includes dst_dir=$(TOPDIR)/includes link_files
 	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
 	$(MAKE) files="$(NAME)" src_dir=`pwd` dst_dir=$(TOPDIR) link_files
-	
+
 clean:
 	$(Q)$(foreach dir, $(DIRS), $(MAKE) TOPDIR=$(TOPDIR) -C $(dir) $@;)
 	$(MAKE) files="$(HEADS)" src_dir=`pwd` dst_dir=$(TOPDIR)/includes unlink_files

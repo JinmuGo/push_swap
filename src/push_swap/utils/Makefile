@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/14 10:56:43 by jgo              ###   ########.fr        #
+#    Updated: 2023/06/06 14:15:14 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ ifndef TOPDIR
 		TOPDIR = $(abspath ../../../)
 endif
 
-include $(TOPDIR)/make_config/Rules.mk
-include $(TOPDIR)/make_config/color_rules.mk
+include $(TOPDIR)/make_config/src/Rules.mk
+include $(TOPDIR)/make_config/com/ColorRules.mk
 
 SRCS =	utils.c \
 		input.c \
@@ -27,7 +27,7 @@ OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)
 -include $(DEPS)
 
-all bonus : 
+all bonus :
 	$(Q)$(call color_printf,$(CYAN),$(NAME),🎯 starting compile $(NAME))
 	$(Q)$(MAKE) $(NAME)
 	$(Q)$(call color_printf,$(GREEN),$(NAME),🔰 done!)
@@ -36,7 +36,7 @@ $(NAME): $(OBJS)
 	$(Q)$(call color_printf,$(GREEN),$(NAME),📚 archive object)
 	$(AR) $(ARFLAGS) $@ $^
 	$(Q)$(MAKE) files="$(NAME)" src_dir=`pwd` dst_dir=$(TOPDIR)/$(MANDATORY_LIB_DIR) link_files
-	
+
 clean:
 	$(Q)$(MAKE) files="$(NAME)" src_dir=`pwd` dst_dir=$(TOPDIR)/$(MANDATORY_LIB_DIR) unlink_files
 	$(Q)$(call color_printf,$(RED),$(NAME),🗑️  remove Objects && Dependency file)
@@ -45,7 +45,7 @@ clean:
 fclean: clean
 		$(Q)$(call color_printf,$(RED),$(NAME),🗑️  remove $(NAME))
 		$(RM) $(NAME)
-	
+
 re : fclean
 	$(MAKE) all
 
