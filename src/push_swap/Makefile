@@ -19,7 +19,7 @@ include $(TOPDIR)/make_config/com/ColorRules.mk
 
 NAME = $(PROJECT_NAME)
 
-DIRS = commands dequeue sort utils
+DIRS = utils sort commands dequeue
 LIBS = $(addsuffix .a, $(addprefix lib/, $(DIRS)))
 
 HEADS =	push_swap.h \
