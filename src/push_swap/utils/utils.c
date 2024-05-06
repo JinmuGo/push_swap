@@ -43,7 +43,7 @@ bool	check_dup(t_st *st)
 
 bool	is_sorted(t_st *st)
 {
-	long		max;
+	long long	max;
 	t_st_node	*node;
 
 	max = (-2147483648) - 1;
