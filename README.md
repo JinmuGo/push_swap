@@ -2,6 +2,8 @@
 
 > Sorting a stack with the fewest possible operations.
 
+https://github.com/user-attachments/assets/3a9b4a3f-3c76-4d60-8c0c-f14a94a4ad09
+
 ## 📌 Overview
 
 `push_swap` is a 42 Cursus algorithm project focused on sorting a list of integers using two stacks (`a` and `b`) and a limited set of operations. The goal is to output the most efficient sequence of instructions to sort the stack in ascending order.
